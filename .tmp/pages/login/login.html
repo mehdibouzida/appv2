@@ -1,0 +1,55 @@
+<!--<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>
+      Login
+    </ion-title>
+  </ion-navbar>
+</ion-header>-->
+
+<ion-content padding>
+	<img src="http://www.eate.fr/img/eate_logo.png">
+
+	<form [formGroup]="loginForm" (submit)="loginUser()" novalidate>
+
+		<ion-item>
+			<ion-label stacked>Email</ion-label>
+			<ion-input #email formControlName="email" type="email" (change)="elementChanged(email)" placeholder="Votre email" [class.invalid]="!loginForm.controls.email.valid && (emailChanged || submitAttempt)"></ion-input>
+		</ion-item>
+		<ion-item class="error-message" *ngIf="!loginForm.controls.email.valid  && (emailChanged || submitAttempt)">
+			<p>L'adresse n'a pas un format correct.</p>
+		</ion-item>
+
+		<ion-item>
+			<ion-label stacked>Password</ion-label>
+			<ion-input #password formControlName="password" type="password" (change)="elementChanged(password)" placeholder="Votre mot de passe"
+				[class.invalid]="!loginForm.controls.password.valid && (passwordChanged || submitAttempt)"></ion-input>
+		</ion-item>
+		<ion-item class="error-message" *ngIf="!loginForm.controls.password.valid  && (passwordChanged || submitAttempt)">
+			<p>Votre mot de passe doit contenir au moins 6 caractères.</p>
+		</ion-item>
+
+		<button ion-button block type="submit">
+      Se connecter
+    </button>
+
+		<button ion-button block (click)="facebookLogin()" color="facebook">
+			Se connecter avec&nbsp;
+			<ion-icon name="logo-facebook"></ion-icon>
+		</button>
+
+		<button ion-button block (click)="googleLogin()" color="google-plus">
+			Se connecter avec&nbsp;
+			<ion-icon name="logo-googleplus"></ion-icon>
+		</button>
+
+	</form>
+
+
+	<button ion-button block clear (click)="goToSignup()" color="light">
+      Je n'ai pas encore de compte
+    </button>
+
+	<button ion-button block clear (click)="goToResetPassword()" color="light">
+      J'ai oublié mon mot de passe
+    </button>
+</ion-content>

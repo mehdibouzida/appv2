@@ -1,0 +1,53 @@
+page-login {
+
+  ion-content.content-md {
+    background-color: color($colors, primary);
+    color: color($colors, light);
+  }
+
+  img {
+    display: block;
+    margin: auto;
+    height: 140px;
+  }
+
+  form {
+    padding: 11px;
+    margin-bottom: 32px;
+    border-radius: 10px;
+    background-color: color($colors, light);
+    button {
+      margin-top: 20px;
+    }
+  }
+
+  p {
+    font-size: 0.8em;
+    color: color($colors, light);
+  }
+
+  ion-label.item-input .label-md, .item-select .label-md, .item-datetime {
+    margin-left: 5px;
+    color: color($colors, light);
+  }
+
+  ion-input {
+    padding: 5px;
+    //background-color: #FF6153;
+    //color: #ffffff;
+  }
+
+  ion-item.item-md {
+    background-color: rgba(#ffffff, 0);
+    color: color($colors, dark);
+  }
+
+  .invalid {
+    border-bottom: 1px solid color($colors, primary);;
+  }
+
+  .error-message .item-inner {
+    border-bottom: 0 !important;
+  }
+
+}

@@ -1,0 +1,39 @@
+<!--
+  Generated template for the OrderActiveList page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>A venir</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-list>
+    <ion-card *ngFor="let order of activeOrders" (click)="goToDishDetail(order.dishId)">
+      <ion-item no-lines>
+        <ion-thumbnail item-left>
+          <img src="{{order.dish.photo}}"/>
+        </ion-thumbnail>
+        <h2>{{order.dish.name}}</h2>
+        <p>
+          {{order.totalPrice}}
+        </p>
+      </ion-item>
+      <!--<ion-row>
+        <ion-col text-right>
+          {{order.item.date_string}} <ion-icon name="time"></ion-icon> {{order.item.time_start_string}} - {{order.item.time_end_string}}
+        </ion-col>
+      </ion-row>-->
+    </ion-card>
+  </ion-list>
+</ion-content>
+

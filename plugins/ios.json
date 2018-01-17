@@ -1,0 +1,34 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-console": {
+            "PACKAGE_NAME": "com.ionicframework.eateapp718122"
+        },
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "com.ionicframework.eateapp718122"
+        },
+        "cordova-plugin-googleplus": {
+            "REVERSED_CLIENT_ID": "com.googleusercontent.apps.822804137364-vs39g88ciutm5i77nnn0vsasm1h257fr",
+            "PACKAGE_NAME": "com.ionicframework.eateapp718122"
+        },
+        "cordova-plugin-splashscreen": {
+            "PACKAGE_NAME": "com.ionicframework.eateapp718122"
+        },
+        "cordova-plugin-statusbar": {
+            "PACKAGE_NAME": "com.ionicframework.eateapp718122"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.ionicframework.eateapp718122"
+        },
+        "ionic-plugin-keyboard": {
+            "PACKAGE_NAME": "com.ionicframework.eateapp718122"
+        }
+    },
+    "dependent_plugins": {}
+}

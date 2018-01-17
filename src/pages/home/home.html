@@ -1,0 +1,28 @@
+<ion-header>
+	<ion-navbar color="primary">
+		<button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+		<ion-title>
+			Ionic Blank
+		</ion-title>
+	</ion-navbar>
+</ion-header>
+
+<ion-content padding>
+	<button ion-button block color="primary" (click)="goToCreate()">
+    Create a new Event
+  </button>
+
+	<button ion-button block color="primary" (click)="goToList()">
+    See your events
+  </button>
+
+	<button ion-button block color="primary" (click)="goToCreateDish()">
+    Create a new Dish
+  </button>
+
+	<button ion-button block color="primary" (click)="goToListDish()">
+    See all dishes
+  </button>
+</ion-content>
